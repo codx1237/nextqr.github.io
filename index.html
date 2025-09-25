@@ -56,15 +56,9 @@
         }
 
         .logo {
-            display: flex;
-            align-items: center;
             font-weight: 700;
-            font-size: 1.5rem;
-        }
-
-        .logo-icon {
-            margin-right: 10px;
             font-size: 1.8rem;
+            letter-spacing: -0.5px;
         }
 
         nav ul {
@@ -563,10 +557,7 @@
     <header>
         <div class="container">
             <div class="header-content">
-                <div class="logo">
-                    
-                    <span>NextQR</span>
-                </div>
+                <div class="logo">NextQR</div>
                 <nav>
                     <ul>
                         <li><a href="#features">Features</a></li>
@@ -863,8 +854,8 @@
     <script>
         // Mobile menu toggle
         document.querySelector('.mobile-menu').addEventListener('click', function() {
-            document.querySelector('nav ul').style.display = 
-                document.querySelector('nav ul').style.display === 'flex' ? 'none' : 'flex';
+            const nav = document.querySelector('nav ul');
+            nav.style.display = nav.style.display === 'flex' ? 'none' : 'flex';
         });
 
         // FAQ accordion
